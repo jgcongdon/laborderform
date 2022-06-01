@@ -4,70 +4,66 @@
     
     <head>
         <title>Lab Order Form</title>
+        
         <style>
-<style>
-      div {
-        margin-bottom: 10px;
-      }
-      label {
-        display: inline-block;
-        width: 110px;
-        color: #777777;
-      }
-      input {
-        padding: 5px 10px;
-      }
-    </style>
+            div {
+            margin-bottom: 10px;
+            }
+            
+            label {
+                display: inline-block;
+                width: 110px;
+                color: #777777;
+            }
+            
+            input {
+                padding: 5px 10px;
+            }
+            
+        </style>
+        
     </head>
     
     <body>
+        <div>
+        <h1>Lab Order Form</h1>
+        </div>
+         
+        <form method="POST" id="sheetdb-form" action="https://sheetdb.io/api/v1/wbfwlzwzjeydy">
+                    
             <div>
-                <h1>Lab Order Form</h1>
+            <label>Name:</label>
+            <input name="data[Name]">
             </div>
-            
-                
-                <form method="POST" id="sheetdb-form" action="https://sheetdb.io/api/v1/wbfwlzwzjeydy">
-                    
-                    <div>
-                    
-                        <label>Name:</label>
-                    <input name="data[Name]">
-                    </div>
                    
-                    <div>
+            <div>
+            <label>Date:</label>
+            <input name="data[Date]">
+            </div>
                     
-                        <label>Date:</label>
-                    <input name="data[Date]">
-                    </div>
+            <div>
+            <label>Item:</label>
+            <input name="data[Item]">
+            </div>
                     
-                    <div>
+            <div>
+            <label>Category:</label>
+            <input name="data[Category]">
+            </div>
                     
-                        <label>Item:</label>
-                    <input name="data[Item]">
-                    </div>
+            <div>
+            <label>Number:</label>
+            <input name="data[Number]">
+            </div>
                     
-                    <div>
-                    
-                        <label>Category:</label>
-                    <input name="data[Category]">
-                    </div>
-                    
-                    <div>
-                    
-                        <label>Number:</label>
-                    <input name="data[Number]">
-                    </div>
-                    
-                    <div>
-                    
-                        <label>Quantity:</label>
-                    <input name="data[Quantity]">
-                    </div>
+            <div>
+            <label>Quantity:</label>
+            <input name="data[Quantity]">
+            </div>
                    
-
-                    <p><button type="submit">Submit</button></p>
+            <p><button type="submit">Submit</button></p>
                     
-                </form>
+        </form>
 
         <script>
             var form = document.getElementById('sheetdb-form');
