@@ -2693,7 +2693,7 @@ textarea[readonly] {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  border-radius: 0; }
+  border-radius: 1; }
 
 input[type='search'] {
   -webkit-box-sizing: border-box;
