@@ -10,7 +10,13 @@
 }
 
 /* Create two equal columns that floats next to each other */
-.column {
+.columnleft {
+  float: left;
+  width: 100px;
+  padding: 10px;
+}
+            
+ .columnright {
   float: left;
   width: 50%;
   padding: 10px;
@@ -21,6 +27,10 @@
   content: "";
   display: table;
   clear: both;
+}
+            
+  div {
+  column-width: 100px;
 }
 </style>
     </head>
@@ -37,7 +47,7 @@
                     
                     <div class="row">
                     
-                    <div class="column">
+                    <div class="columnleft">
                        
                     <p>Name: </p>
                     <p>Date: </p>
@@ -48,7 +58,7 @@
                     
                     </div>
                         
-                    <div class="column">
+                    <div class="columnright">
 
                     <p><input name="data[Name]"></p>
                     <p><input name="data[Date]"></p>
