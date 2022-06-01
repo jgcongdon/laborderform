@@ -2,52 +2,46 @@
 
 <html lang="en" dir="ltr">
     
-  <head>
-    <title>Lab Order Form</title>
-  </head>
+    <head>
+        <title>Lab Order Form</title>
+    </head>
     
     <body>
 
-<div>
-    
-  <div>
-      <h1>Lab Order Form</h1>
-  </div>
-    
-    <div>
-          
-<form method="POST" id="sheetdb-form" action="https://sheetdb.io/api/v1/wbfwlzwzjeydy">
-    <p>Name: <input name="data[Name]"></p>
-    <p>Date: <input name="data[Email]"></p>
-    <p>Item: <input name="data[Item]"></p>
-    <p>Category: <input name="data[Category]"></p>
-    <p>Number: <input name="data[Number]"></p>
-    <p>Quantity: <input name="data[Quantity]"></p>
-    <p><button type="submit">Submit</button></p>
-          </form>
-          
-  </div>
+        <div>
+            <div>
+                <h1>Lab Order Form</h1>
+            </div>
+            <div>
+                
+                <form method="POST" id="sheetdb-form" action="https://sheetdb.io/api/v1/wbfwlzwzjeydy">
+                    <p>Name: <input name="data[Name]"></p>
+                    <p>Date: <input name="data[Email]"></p>
+                    <p>Item: <input name="data[Item]"></p>
+                    <p>Category: <input name="data[Category]"></p>
+                    <p>Number: <input name="data[Number]"></p>
+                    <p>Quantity: <input name="data[Quantity]"></p>
+                    <p><button type="submit">Submit</button></p>
+                </form>
+            </div>
         </div>
 
-<!--><p><button type="test">TEST</button></p><-->
-
-<script>
-  var form = document.getElementById('sheetdb-form');
-  form.addEventListener("submit", e => {
-    e.preventDefault();
-    fetch(form.action, {
-        method : "POST",
-        body: new FormData(document.getElementById("sheetdb-form")),
-    }).then(
-        response => response.json()
-    ).then((html) => {
-      // you can put any JS code here
-      alert('success')
-        window.location.href = 'https://jgcongdon.github.io/laborderform/';
-    });
-  });
-</script>
-
+        <script>
+            var form = document.getElementById('sheetdb-form');
+            form.addEventListener("submit", e => {
+            e.preventDefault();
+            fetch(form.action, {
+            method : "POST",
+            body: new FormData(document.getElementById("sheetdb-form")),
+            }).then(
+            response => response.json()
+            ).then((html) => {
+            alert('success')
+            window.location.href = 'https://jgcongdon.github.io/laborderform/';
+            });
+            });
+        </script>
+        
     </body>
     
 </html>
