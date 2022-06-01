@@ -12,15 +12,25 @@
             <div>
                 <h1>Lab Order Form</h1>
             </div>
-            <div>
+            <div class="row">
                 
                 <form method="POST" id="sheetdb-form" action="https://sheetdb.io/api/v1/wbfwlzwzjeydy">
-                    <p>Name: <input name="data[Name]"></p>
+                    <div class="column">
+                        <p>Name: </p>
                     <p>Date: <input name="data[Email]"></p>
                     <p>Item: <input name="data[Item]"></p>
                     <p>Category: <input name="data[Category]"></p>
                     <p>Number: <input name="data[Number]"></p>
                     <p>Quantity: <input name="data[Quantity]"></p>
+                    
+                    </div>
+                    <div class="column">
+                        <p><input name="data[Name]"></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                    </div>
                     <p><button type="submit">Submit</button></p>
                 </form>
             </div>
